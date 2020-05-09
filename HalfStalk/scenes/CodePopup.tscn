@@ -4,7 +4,7 @@
 [ext_resource path="res://assets/UIElements/paper-plain.png" type="Texture" id=2]
 [ext_resource path="res://scripts/CodePopup.gd" type="Script" id=3]
 
-[sub_resource type="StyleBoxTexture" id=3]
+[sub_resource type="StyleBoxTexture" id=1]
 texture = ExtResource( 2 )
 region_rect = Rect2( 0, 0, 768, 768 )
 
@@ -12,16 +12,15 @@ region_rect = Rect2( 0, 0, 768, 768 )
 radius = 27.6484
 
 [node name="PopupPanel" type="PopupPanel"]
+visible = true
 light_mask = 0
-
 margin_left = 182.767
 margin_top = 126.948
 margin_right = 339.767
 margin_bottom = 310.948
 theme = ExtResource( 1 )
-custom_styles/panel = SubResource( 3 )
+custom_styles/panel = SubResource( 1 )
 script = ExtResource( 3 )
-
 
 [node name="Area2D" type="Area2D" parent="."]
 position = Vector2( -5.08221, 1.01645 )
